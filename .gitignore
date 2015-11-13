@@ -1,0 +1,38 @@
+# Python bytecode:
+*.py[co]
+
+.boto
+
+# Packaging files:
+*.egg*
+dist
+
+# Editor temp files:
+*.swp
+*~
+
+# Any unwanted build directories:
+build
+
+# SQLite3 database files:
+*.db
+
+# Celerybeat scheduler file:
+celerybeat-schedule
+
+.idea
+.htaccess
+.DS_Store
+hulk.iml
+.sass-cache
+config.txt
+node_modules
+oplogstatus.txt
+
+hulk/settings/local.py
+hulk/static/
+hulk/media/
+
+.vagrant/
+Vagrantfile
+*.psql
