@@ -1,7 +1,9 @@
+from sys import path
+from os.path import abspath, dirname, join
 
-import os
+BASE_DIR = dirname(dirname(abspath(__file__)))
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+path.append(BASE_DIR)
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '2*u^uo*qtm+pjw@gd&jfhoi3at+nrn0@e0ti^6v2vdi&+^^0w3'
@@ -19,7 +21,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'pase.apps.users',
+    'apps.users',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -40,7 +42,7 @@ WSGI_APPLICATION = 'wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
