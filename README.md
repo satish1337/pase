@@ -16,7 +16,12 @@ this project is completely REST based.
 3. Add these lines to .bashrc
     * export WORKON_HOME=~/.Envs
 	* source /usr/local/bin/virtualenvwrapper.sh
-	
+
+4. Install REST framework
+	* pip install djangorestframework
+    * pip install markdown       # Markdown support for the browsable API.
+    * pip install django-filter  # Filtering support
+
 ==============================================================================================================
 
 **Setup Steps:**

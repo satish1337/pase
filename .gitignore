@@ -1,8 +1,6 @@
 # Python bytecode:
 *.py[co]
 
-.boto
-
 # Packaging files:
 *.egg*
 dist
@@ -16,22 +14,13 @@ build
 
 # SQLite3 database files:
 *.db
-
-# Celerybeat scheduler file:
-celerybeat-schedule
+*.sqlite3
 
 .idea
 .htaccess
 .DS_Store
-hulk.iml
 .sass-cache
 config.txt
-node_modules
-oplogstatus.txt
-
-hulk/settings/local.py
-hulk/static/
-hulk/media/
 
 .vagrant/
 Vagrantfile
