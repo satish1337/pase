@@ -1,27 +1,64 @@
-# Python bytecode:
-*.py[co]
 
-# Packaging files:
-*.egg*
-dist
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
 
-# Editor temp files:
-*.swp
-*~
+# C extensions
+*.so
 
-# Any unwanted build directories:
-build
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# SQLite3 database files:
-*.db
-*.sqlite3
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
 
-.idea
-.htaccess
-.DS_Store
-.sass-cache
-config.txt
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-.vagrant/
-Vagrantfile
-*.psql
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+*.pot
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local.py
+
+.env
+db.sqlite3
